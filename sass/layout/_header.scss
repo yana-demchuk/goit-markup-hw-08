@@ -1,0 +1,127 @@
+/* Шапка */
+
+.header {
+  outline: 1px solid #ececec;
+
+  .container {
+    display: flex;
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+
+  .current {
+    color: $accent-color;
+  }
+}
+
+.navigation-panel {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+  margin-right: 85px;
+  padding-bottom: 25px;
+  padding-top: 24px;
+}
+
+.current::after {
+  content: "";
+  display: block;
+  width: 100%;
+
+  height: 4px;
+  background-color: $accent-color;
+  border-radius: 2px;
+  margin-top: 28px;
+}
+
+.navigation-list-item {
+  align-content: center;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.navigation-list-item-link,
+.social-adress-list-item-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $first-text-color;
+  padding-top: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accent,
+.navigation-list-item-link:hover,
+.navigation-list-item-link:focus,
+.social-adress-list-item-link:hover,
+.social-adress-list-item-link:focus,
+.contacts-list-item-adress-link:hover,
+.contacts-list-item-adress-link:focus {
+  color: $accent-color;
+}
+
+.navigation-list-item-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: none;
+  border-radius: 2px;
+  margin-top: 28px;
+}
+
+.social-adress-list-item-link {
+  color: $secondary-text-color;
+}
+
+.icon-email {
+  width: 16px;
+  height: 11.2px;
+}
+
+.icon-phone {
+  width: 10px;
+  height: 14.94px;
+}
+
+.icon-email,
+.icon-phone {
+  margin-right: 10px;
+  fill: $secondary-text-color;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-adress-list-item-link:hover .icon-email,
+.social-adress-list-item-link:hover .icon-phone {
+  fill: $accent-color;
+}
+
+.social-adress-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-adress-list-item:not(:last-child) {
+  margin-right: 30px;
+}
