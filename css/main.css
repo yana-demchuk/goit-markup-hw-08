@@ -645,6 +645,7 @@ button {
 
 .menu-btn {
   background-color: transparent;
+  outline: none;
 }
 
 .menu-btn:hover {

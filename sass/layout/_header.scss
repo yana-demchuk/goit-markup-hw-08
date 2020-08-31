@@ -45,6 +45,7 @@
 
 .menu-btn {
   background-color: transparent;
+  outline: none;
 
   &:hover {
     fill: $accent-color;
