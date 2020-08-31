@@ -8,13 +8,12 @@
   margin-right: auto;
 }
 
-.title {
+.services .title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: $first-text-color;
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -42,4 +41,10 @@
   background-color: rgba(47, 48, 58, 0.8);
   padding-top: 27px;
   padding-bottom: 27px;
+}
+
+@media screen and (max-width: 1199px) {
+  .services {
+    display: none;
+  }
 }

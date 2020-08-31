@@ -4,30 +4,29 @@
   background-color: #2f303a;
 
   .container {
-    width: 1170px;
+    width: 450px;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-  }
-
-  .logo {
-    color: #ffffff;
-    padding-bottom: 20px;
-    padding-top: 60px;
-    margin-right: 0;
   }
 }
 
 .contacts {
-  width: 231px;
-  margin-right: 69px;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.contacts .logo {
+  color: #ffffff;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
 .contacts-list-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .contacts-list-item-adress,
@@ -35,12 +34,18 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
   color: #ffffff;
 }
 
 .contacts-list-item-adress-link {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.contacts-list-item-adress-link:hover,
+.contacts-list-item-adress-link:focus {
+  color: $accent-color;
 }
 
 .appeal {
@@ -52,12 +57,13 @@
 }
 
 .socials {
-  padding-top: 72px;
-  padding-bottom: 100px;
+  text-align: center;
+  margin-bottom: 60px;
 
   .socials-list {
     display: flex;
     margin-top: 20px;
+    justify-content: center;
   }
 
   .socials-list-item-link {
@@ -98,17 +104,16 @@
 }
 
 .sender {
-  padding-top: 72px;
-  margin-left: auto;
+  text-align: center;
 }
 
 .sender-email {
   box-sizing: border-box;
-  margin-top: 20px;
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding-left: 16px;
-  margin-right: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   color: #ffffff;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -138,5 +143,60 @@
     height: 24px;
     background-image: url("../images/icons/send.svg");
     margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer .container {
+    width: 738px;
+  }
+
+  .position-tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts {
+    padding-left: 61px;
+  }
+
+  .socials {
+    padding-right: 74px;
+    padding-top: 5px;
+  }
+
+  .button-form-send {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .position-tablet {
+    display: flex;
+  }
+
+  .contacts {
+    margin-right: 69px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .socials,
+  .sender {
+    padding-top: 12px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .sender-email {
+    width: 358px;
   }
 }
